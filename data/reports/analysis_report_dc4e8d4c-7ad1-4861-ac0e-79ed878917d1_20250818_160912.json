@@ -1,0 +1,68 @@
+{
+  "crawl_id": "dc4e8d4c-7ad1-4861-ac0e-79ed878917d1",
+  "timestamp": "2025-08-18T16:09:12.768367",
+  "analyses": [
+    {
+      "title": "Unavailable - Onion Service",
+      "url": "http://uoxqi4lrqc525ayb44fcu5favrnbo6z6fxihb6qlclcpea6fefmd6yad.onion/",
+      "summary": "The onion service at this URL appears to be unavailable or offline. This could indicate a temporary outage, a permanent takedown, or a misconfigured address.",
+      "risk_assessment": {
+        "score": 20,
+        "level": "low",
+        "category": "Technical Issue/Possible Takedown",
+        "details": null
+      },
+      "keywords": [
+        "onion service",
+        "unavailable",
+        "offline",
+        "takedown",
+        "tor"
+      ],
+      "pii": {
+        "names": [],
+        "emails": [],
+        "websites": [],
+        "contact_numbers": []
+      },
+      "action_plan": "Monitor the URL periodically to check for reactivation. Log the incident for future analysis of darknet service availability. Investigate the potential reasons for unavailability, such as law enforcement actions or service migration.",
+      "analysis_timestamp": "2025-08-18 16:09:09.766059"
+    }
+  ],
+  "summary": {
+    "total_pages_analyzed": 1,
+    "risk_distribution": {
+      "low": 1,
+      "medium": 0,
+      "high": 0,
+      "critical": 0
+    },
+    "high_risk_pages": [],
+    "top_keywords": [
+      {
+        "keyword": "onion service",
+        "frequency": 1
+      },
+      {
+        "keyword": "unavailable",
+        "frequency": 1
+      },
+      {
+        "keyword": "offline",
+        "frequency": 1
+      },
+      {
+        "keyword": "takedown",
+        "frequency": 1
+      },
+      {
+        "keyword": "tor",
+        "frequency": 1
+      }
+    ],
+    "analysis_timestamp": "2025-08-18T16:09:12.768686",
+    "recommendations": [
+      "Overall risk level appears manageable"
+    ]
+  }
+}

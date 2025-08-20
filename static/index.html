@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chhaya OS - Dark Web Intelligence Command Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="command-center">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <h1>CHHAYA OS</h1>
+                <span class="subtitle">DARK WEB INTELLIGENCE PLATFORM</span>
+            </div>
+            <div class="system-time">
+                <span id="current-time"></span>
+            </div>
+        </header>
+
+        <!-- Status Grid -->
+        <div class="status-grid">
+            <!-- Tor Status -->
+            <div class="status-card tor-status">
+                <div class="card-header">
+                    <i class="fas fa-user-secret"></i>
+                    <h3>TOR NETWORK</h3>
+                </div>
+                <div class="status-indicator" id="tor-indicator">
+                    <div class="pulse-dot"></div>
+                    <span id="tor-status">CONNECTING...</span>
+                </div>
+                <div class="status-details">
+                    <p>Exit Node: <span id="tor-ip">---.---.---.---</span></p>
+                    <p>Latency: <span id="tor-latency">--- ms</span></p>
+                </div>
+            </div>
+
+            <!-- Crawler Status -->
+            <div class="status-card crawler-status">
+                <div class="card-header">
+                    <i class="fas fa-spider"></i>
+                    <h3>DARK WEB CRAWLER</h3>
+                </div>
+                <div class="status-indicator" id="crawler-indicator">
+                    <div class="pulse-dot"></div>
+                    <span id="crawler-status">STANDBY</span>
+                </div>
+                <div class="status-details">
+                    <p>Active Jobs: <span id="active-jobs">0</span></p>
+                    <p>Pages Crawled: <span id="pages-crawled">0</span></p>
+                </div>
+            </div>
+
+            <!-- AI Agents -->
+            <div class="status-card ai-status">
+                <div class="card-header">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI AGENTS</h3>
+                </div>
+                <div class="status-indicator" id="ai-indicator">
+                    <div class="pulse-dot"></div>
+                    <span id="ai-status">ON DUTY</span>
+                </div>
+                <div class="status-details">
+                    <p>Model: <span id="ai-model">GEMINI-2.0-FLASH</span></p>
+                    <p>Analyses: <span id="ai-analyses">0</span></p>
+                </div>
+            </div>
+
+            <!-- Threat Level -->
+            <div class="status-card threat-status">
+                <div class="card-header">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>THREAT LEVEL</h3>
+                </div>
+                <div class="threat-meter">
+                    <div class="threat-bar" id="threat-bar"></div>
+                </div>
+                <div class="status-details">
+                    <p>Risk Score: <span id="risk-score">0/100</span></p>
+                    <p>Classification: <span id="threat-class">MINIMAL</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Control Panel -->
+        <div class="control-panel">
+            <!-- Search Section -->
+            <div class="search-section">
+                <div class="search-header">
+                    <h2><i class="fas fa-search"></i> INITIATE DARK WEB SCAN</h2>
+                    <div class="keyword-presets">
+                        <span class="presets-label">Quick Targets:</span>
+                        <span class="preset-tag" data-keyword="cryptocurrency">cryptocurrency</span>
+                        <span class="preset-tag" data-keyword="drugs">drugs</span>
+                        <span class="preset-tag" data-keyword="weapons">weapons</span>
+                        <span class="preset-tag" data-keyword="terrorism">terrorism</span>
+                        <span class="preset-tag" data-keyword="pornography">pornography</span>
+                        <span class="preset-tag" data-keyword="LSD">LSD</span>
+                    </div>
+                </div>
+                <div class="search-controls">
+                    <input type="text" id="search-query" placeholder="Enter target keywords..." />
+                    <input type="number" id="crawl-limit" placeholder="Limit" value="10" min="1" max="50" />
+                    <button id="start-scan" class="scan-button">
+                        <i class="fas fa-rocket"></i>
+                        DEPLOY CRAWLERS
+                    </button>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="results-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-list"></i> INTELLIGENCE FEED</h2>
+                    <div class="feed-stats">
+                        <span>Links Found: <span id="links-found">0</span></span>
+                        <span>Success Rate: <span id="success-rate">0%</span></span>
+                    </div>
+                </div>
+                
+                <div class="results-container" id="results-container">
+                    <div class="no-data">
+                        <i class="fas fa-satellite-dish"></i>
+                        <p>Awaiting scan initiation...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity Log -->
+        <div class="activity-log">
+            <h3><i class="fas fa-terminal"></i> SYSTEM LOG</h3>
+            <div class="log-container" id="log-container">
+                <div class="log-entry">
+                    <span class="timestamp">[SYSTEM INIT]</span>
+                    <span class="message">Chhaya OS Command Center initialized</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

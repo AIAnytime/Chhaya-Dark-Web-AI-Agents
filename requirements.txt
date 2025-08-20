@@ -1,0 +1,10 @@
+requests[socks]
+fastapi
+uvicorn[standard]
+beautifulsoup4
+lxml
+onionsearch
+google-genai
+python-dotenv
+pydantic-settings
+pydantic[email]

@@ -1,4 +1,4 @@
-# Chhaya OS - Dark Web Monitoring Platform
+# Chhaya OS - Dark Web Monitoring AI Agent
 
 Chhaya OS is a comprehensive dark web monitoring and intelligence platform designed for cybersecurity professionals. This tool enables automated scanning, analysis, and monitoring of dark web resources with AI-powered insights.
 
